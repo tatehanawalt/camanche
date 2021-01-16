@@ -5,8 +5,8 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	"github.com/TateHanawalt/goutil"
-	"github.com/TateHanawalt/camanche/opts"
+	"github.com/tatehanawalt/goutil"
+	"github.com/tatehanawalt/goutil/opts"
 )
 
 type CallFn func(ArgType) error
@@ -340,10 +340,6 @@ func (c *CMD) MkAddNR(id string, fn CallFn) (error) {
 	}
 	return nil
 }
-
-
-
-
 
 func indexOf(element string, data []string) int {
 	for k, v := range data {
